@@ -5,7 +5,7 @@ from core.config import settings
 
 app = FastAPI ()
 app.include_router(api_router, 
-                   prefix = settings.api.prefix) #пока не понял для чего!!!
+                   prefix = settings.api.prefix) 
 
 @app.get("/")
 def read_root():
